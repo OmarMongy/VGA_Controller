@@ -5,9 +5,9 @@ This repository contains a Verilog implementation of a VGA Controller compliant 
 - Introduction
 - VGA Standard
 - Design
-  `Horizontal Counter`
-  `Vertical Counter`
-  `VGA Controller`
+ 1. `Horizontal Counter`
+ 2. `Vertical Counter`
+ 3. `VGA Controller`
 - Usage
 - Simulation
 - License
