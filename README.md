@@ -59,6 +59,8 @@ hsync: Horizontal synchronization signal
 vsync: Vertical synchronization signal
 The VGA controller module combines the horizontal and vertical counters to produce VGA timing signals (hsync and vsync). It also controls whether the video is displayed or not (video_on) and sets the RGB color values based on user-defined input.
 
+![Architecture Of VGA](https://i.ibb.co/T1mb2bQ/Screenshot-2023-09-12-032548.png)
+
 ## Usage
 To use this VGA Controller design, you can include the Verilog modules in your FPGA project and instantiate them as needed. Ensure that you configure the design parameters (e.g., resolution, refresh rate) to match the VGA standard specifications for your target display.
 
