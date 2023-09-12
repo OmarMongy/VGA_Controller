@@ -25,7 +25,7 @@ Refresh Rate: Common refresh rates are 60Hz, 72Hz, and 75Hz.
 Color Depth: VGA supports 256 colors from a palette of 262,144 (18-bit color depth).
 Sync Signals: VGA uses horizontal and vertical synchronization signals, HSYNC and VSYNC, to define the timing of each frame.
 These standard specifications are essential for ensuring compatibility with VGA monitors.
-![VGA Standard](https://ibb.co/SVsy279)
+![VGA Standard](<img src="https://i.ibb.co/GCxpX3b/Screenshot-2023-09-12-032527.png" alt="Screenshot-2023-09-12-032527" border="0">)
 ## Design
 The Verilog design for the VGA Controller is modular, following the VGA standard's timing and specifications.
 
