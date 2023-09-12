@@ -15,7 +15,7 @@ License
 ## Introduction
 The VGA (Video Graphics Array) standard is an analog graphics display standard developed by IBM in 1987. It has been a widely adopted interface for connecting computer monitors and displays for many years. VGA controllers are integral to generating the required video signals to display images and graphics on VGA-compatible monitors.
 
-This Verilog implementation of a VGA Controller adheres to VGA standard specifications and includes three key modules:
+This Verilog implementation of a VGA Controller adheres to VGA standard specifications and includes three key modules.
 
 ## VGA Standard
 The VGA standard specifies various parameters that define how video signals are generated and displayed. These parameters include:
@@ -25,7 +25,7 @@ Refresh Rate: Common refresh rates are 60Hz, 72Hz, and 75Hz.
 Color Depth: VGA supports 256 colors from a palette of 262,144 (18-bit color depth).
 Sync Signals: VGA uses horizontal and vertical synchronization signals, HSYNC and VSYNC, to define the timing of each frame.
 These standard specifications are essential for ensuring compatibility with VGA monitors.
-
+![VGA Standard](https://ibb.co/SVsy279)
 ## Design
 The Verilog design for the VGA Controller is modular, following the VGA standard's timing and specifications.
 
