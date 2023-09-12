@@ -5,12 +5,10 @@ This repository contains a Verilog implementation of a VGA Controller compliant 
 - ### Introduction
 - ### VGA Standard
 - ### Design :
- - `Horizontal Counter`
- - `Vertical Counter`
- - `VGA Controller`
-- ### Usage
-- ### Simulation
-- ### License
+  [ `Horizontal Counter` , `Vertical Counter`  , `VGA Controller` ]
+-  Usage
+-  Simulation
+-  License
 
 ## Introduction
 The VGA (Video Graphics Array) standard is an analog graphics display standard developed by IBM in 1987. It has been a widely adopted interface for connecting computer monitors and displays for many years. VGA controllers are integral to generating the required video signals to display images and graphics on VGA-compatible monitors.
