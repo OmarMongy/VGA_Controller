@@ -1,4 +1,4 @@
-odule VGA_controller_tb();
+module VGA_controller_tb();
 reg clk, reset_n;
 reg [2:0] rgb_sw;
 wire [2:0] rgb;
