@@ -31,7 +31,7 @@ end
 
 always@(*)
 begin
-  if(pixel_y < 513 || pixel_x > 514)
+  if(pixel_y < 513 || pixel_y > 514)
   vsync = 1'b1;
 else
   vsync = 1'b0;
