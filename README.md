@@ -87,13 +87,13 @@ We encountered a memory limitation on our FPGA for 640x480x3-bit RGB data. To ad
 Our VGA controller successfully generated the required synchronization signals and displayed images stored in RAM on the VGA monitor. Detailed simulation results and performance metrics will be provided.
 
 ## 9. FPGA Design Demo
-A live demo was conducted on the Cyclone IV FPGA board, showcasing the VGA controller's ability to render images accurately on a VGA monitor. [Include images or screenshots of the demo]
+A live demo was conducted on the Cyclone IV FPGA board, showcasing the VGA controller's ability to render images accurately on a VGA monitor.
 ![Demo](https://i.ibb.co/YB2ZmGV/Whats-App-Image-2024-05-12-at-3-14-59-PM.jpg)
 ![Demo](https://i.ibb.co/CwyyP59/Whats-App-Image-2024-05-15-at-4-14-00-PM-2.jpg)
 ![Demo](https://i.ibb.co/M9K1LZS/Whats-App-Image-2024-05-15-at-4-14-00-PM.jpg)
 ![Demo](https://i.ibb.co/wC9W0kX/Whats-App-Image-2024-05-12-at-3-14-59-PM-2.jpg)
 ![Demo](https://i.ibb.co/CwyyP59/Whats-App-Image-2024-05-15-at-4-14-00-PM-2.jpg)
-![Demo]([https://i.ibb.co/tmJT0GQ/Screenshot-2024-05-17-151410.png](https://i.ibb.co/phVYpXc/Whats-App-Image-2024-05-15-at-4-14-00-PM-1.jpg))
+![Demo]([https://i.ibb.co/phVYpXc/Whats-App-Image-2024-05-15-at-4-14-00-PM-1.jpg)
 ## 10. References
 ➢ Rapid prototyping of digital systems SOPC edition (James O. Hamblen, Tyson S. Hall, 
 Michael D. Furman) 
