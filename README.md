@@ -91,9 +91,10 @@ A live demo was conducted on the Cyclone IV FPGA board, showcasing the VGA contr
 ![Demo](https://i.ibb.co/YB2ZmGV/Whats-App-Image-2024-05-12-at-3-14-59-PM.jpg)
 ![Demo](https://i.ibb.co/CwyyP59/Whats-App-Image-2024-05-15-at-4-14-00-PM-2.jpg)
 ![Demo](https://i.ibb.co/M9K1LZS/Whats-App-Image-2024-05-15-at-4-14-00-PM.jpg)
-![Demo](https://i.ibb.co/tmJT0GQ/Screenshot-2024-05-17-151410.png)
-![Demo](https://i.ibb.co/tmJT0GQ/Screenshot-2024-05-17-151410.png)
-![Demo](https://i.ibb.co/tmJT0GQ/Screenshot-2024-05-17-151410.png)
+![Demo](https://i.ibb.co/wC9W0kX/Whats-App-Image-2024-05-12-at-3-14-59-PM-2.jpg)
+![Demo](https://i.ibb.co/CwyyP59/Whats-App-Image-2024-05-15-at-4-14-00-PM-2.jpg)
+![Demo]([https://i.ibb.co/tmJT0GQ/Screenshot-2024-05-17-151410.png](https://i.ibb.co/phVYpXc/Whats-App-Image-2024-05-15-at-4-14-00-PM-1.jpg))
 ## 10. References
-- [Include references to datasheets, academic papers, and other resources used in your project]
-
+➢ Rapid prototyping of digital systems SOPC edition (James O. Hamblen, Tyson S. Hall, 
+Michael D. Furman) 
+➢ Let’s build a video card! (Ben Eater) 
