@@ -37,13 +37,15 @@ The VGA standard specifies the signal timing and synchronization requirements fo
 
 ### ii. VGA Controller Architecture Description
 The architecture consists of two main blocks: the VGA Sync block for generating synchronization signals and the Pixel Generation block for fetching and outputting pixel data.
-![VGA Standard](https://camo.githubusercontent.com/4850d7ebffc36b4e6ab96620a434981279dd11c7ea8d42b287bd9276846b7ea1/68747470733a2f2f692e6962622e636f2f54316d623262512f53637265656e73686f742d323032332d30392d31322d3033323534382e706e67)
+![VGA Architecture](https://camo.githubusercontent.com/4850d7ebffc36b4e6ab96620a434981279dd11c7ea8d42b287bd9276846b7ea1/68747470733a2f2f692e6962622e636f2f54316d623262512f53637265656e73686f742d323032332d30392d31322d3033323534382e706e67)
 ### iii. VGA Signal Timing
 The VGA signal timing involves precise generation of HSync and VSync pulses, along with pixel clock timing, to ensure proper image rendering.
-![VGA Signal Timing](https://i.ibb.co/sPbPx85/unnamed.png)
+![VGA Signal Timing]
+(https://i.ibb.co/sPbPx85/unnamed.png)
 ### iv. The Interfacing for VGA On The FPGA Board
 Our FPGA board, the Cyclone IV, includes a built-in VGA port with active signals for HSync, VSync, and RGB data.
-![Interfacing](https://i.ibb.co/tmJT0GQ/Screenshot-2024-05-17-151410.png)
+![Interfacing]
+(https://i.ibb.co/tmJT0GQ/Screenshot-2024-05-17-151410.png)
 ## 7. Design Details
 
 ### i. Inputs and Outputs
