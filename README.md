@@ -1,16 +1,17 @@
-# VGA Controller Project on FPGA
+# Design and Implementation of VGA Controller on FPGA Fabric for Visual Display and Monitoring
 
 ## 1. Introduction
-This project involves designing and implementing a VGA controller on an FPGA using Verilog HDL. Our primary objective is to replace a traditional solid IC implementation with a modern, FPGA-based solution to display images on a VGA monitor.
+This project involves designing and implementing a VGA controller on an FPGA using Verilog HDL.
+Our primary objective is to replace a traditional solid IC implementation with a modern, FPGA-based solution to display images on a VGA monitor.
 
 ## 2. Project Details
-**Professor:** [Professor's Name]  
-**Team Name:** [Your Team Name]  
+**Professor:** Dr. Howida Abd AlLatif    
+**Team Name:** ZDC  
 **Team Members:**
-- [Member 1 Name]
-- [Member 2 Name]
-- [Member 3 Name]
-- [Member 4 Name]  
+- Omar Ashraf Abd El Mongy  
+- Khaled Mohamed Fathy 
+- Abd-Allah Reda Farag  
+- Kareem Ahmed Fathy 
 **Project Title:** FPGA-Powered Video Graphics Array
 
 ### Roles of Each Member:
@@ -32,15 +33,17 @@ Our solution involves designing a VGA controller using the Cyclone IV FPGA board
 ### i. VGA Standard
 The VGA standard specifies the signal timing and synchronization requirements for displaying images on VGA-compatible monitors. 
 
+![VGA Standard](https://camo.githubusercontent.com/43352d94a0d30359c00d17dd86fec8375acfe09b10b6df1cd6ddcd78439213cf/68747470733a2f2f692e6962622e636f2f474378705833622f53637265656e73686f742d323032332d30392d31322d3033323532372e706e67)
+
 ### ii. VGA Controller Architecture Description
 The architecture consists of two main blocks: the VGA Sync block for generating synchronization signals and the Pixel Generation block for fetching and outputting pixel data.
-
+![VGA Standard](https://camo.githubusercontent.com/4850d7ebffc36b4e6ab96620a434981279dd11c7ea8d42b287bd9276846b7ea1/68747470733a2f2f692e6962622e636f2f54316d623262512f53637265656e73686f742d323032332d30392d31322d3033323534382e706e67)
 ### iii. VGA Signal Timing
 The VGA signal timing involves precise generation of HSync and VSync pulses, along with pixel clock timing, to ensure proper image rendering.
-
+![VGA Signal Timing](https://i.ibb.co/sPbPx85/unnamed.png)
 ### iv. The Interfacing for VGA On The FPGA Board
 Our FPGA board, the Cyclone IV, includes a built-in VGA port with active signals for HSync, VSync, and RGB data.
-
+![Interfacing](https://i.ibb.co/tmJT0GQ/Screenshot-2024-05-17-151410.png)
 ## 7. Design Details
 
 ### i. Inputs and Outputs
@@ -73,7 +76,7 @@ The design will be implemented in Verilog HDL, encompassing modules for each com
 #### VGA Controller Module
 #### Memory ROM Module
 #### Top-Level Module
-
+![VGA Standard](https://camo.githubusercontent.com/e9389fc52b8a0ea1c848db7bcb5d389212aad48c6afec852ce3bb679b0422924/68747470733a2f2f692e6962622e636f2f636b71626b62532f53637265656e73686f742d323032332d30392d32392d3139353530352e706e67253345)
 ### iv. Testing and Simulation
 Our testing phase will involve simulating the Verilog design to ensure correctness of timing signals and proper image rendering on the VGA monitor.
 
@@ -85,7 +88,12 @@ Our VGA controller successfully generated the required synchronization signals a
 
 ## 9. FPGA Design Demo
 A live demo was conducted on the Cyclone IV FPGA board, showcasing the VGA controller's ability to render images accurately on a VGA monitor. [Include images or screenshots of the demo]
-
+![Demo](https://i.ibb.co/YB2ZmGV/Whats-App-Image-2024-05-12-at-3-14-59-PM.jpg)
+![Demo](https://i.ibb.co/CwyyP59/Whats-App-Image-2024-05-15-at-4-14-00-PM-2.jpg)
+![Demo](https://i.ibb.co/M9K1LZS/Whats-App-Image-2024-05-15-at-4-14-00-PM.jpg)
+![Demo](https://i.ibb.co/tmJT0GQ/Screenshot-2024-05-17-151410.png)
+![Demo](https://i.ibb.co/tmJT0GQ/Screenshot-2024-05-17-151410.png)
+![Demo](https://i.ibb.co/tmJT0GQ/Screenshot-2024-05-17-151410.png)
 ## 10. References
 - [Include references to datasheets, academic papers, and other resources used in your project]
 
