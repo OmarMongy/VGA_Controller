@@ -1,69 +1,91 @@
-# VGA Controller in Verilog
-This repository contains a Verilog implementation of a VGA Controller compliant with the VGA (Video Graphics Array) standard. VGA is a widely-used interface standard for connecting computer monitors and displays, known for its historical significance in early PC graphics.
+# VGA Controller Project on FPGA
 
-## Table of Contents
-- Introduction
-- VGA Standard
-- Design :
-   `Horizontal Counter`  `Vertical Counter`   `VGA Controller` 
--  Usage
--  Simulation
--  License
+## 1. Introduction
+This project involves designing and implementing a VGA controller on an FPGA using Verilog HDL. Our primary objective is to replace a traditional solid IC implementation with a modern, FPGA-based solution to display images on a VGA monitor.
 
-## Introduction
-The VGA (Video Graphics Array) standard is an analog graphics display standard developed by IBM in 1987. It has been a widely adopted interface for connecting computer monitors and displays for many years. VGA controllers are integral to generating the required video signals to display images and graphics on VGA-compatible monitors.
+## 2. Project Details
+**Professor:** [Professor's Name]  
+**Team Name:** [Your Team Name]  
+**Team Members:**
+- [Member 1 Name]
+- [Member 2 Name]
+- [Member 3 Name]
+- [Member 4 Name]  
+**Project Title:** FPGA-Powered Video Graphics Array
 
-This Verilog implementation of a VGA Controller adheres to VGA standard specifications and includes three key modules.
+### Roles of Each Member:
+- **Design and Architecture:** [Member 1 Name]
+- **Logic Analysis:** [Member 2 Name], [Member 3 Name]
+- **Testing:** [Member 4 Name]
 
-## VGA Standard
-The VGA standard specifies various parameters that define how video signals are generated and displayed. These parameters include:
+## 3. Aim and Objectives
+The aim of this project is to design a VGA controller using an FPGA and Verilog HDL to display images on a VGA monitor. Our objectives include understanding VGA signal standards, designing timing generation logic, implementing the design in Verilog, and testing the system.
 
-Resolution: VGA typically supports resolutions like 640x480 pixels, 800x600 pixels, and 1024x768 pixels.
-Refresh Rate: Common refresh rates are 60Hz, 72Hz, and 75Hz.
-Color Depth: VGA supports 256 colors from a palette of 262,144 (18-bit color depth).
-Sync Signals: VGA uses horizontal and vertical synchronization signals, HSYNC and VSYNC, to define the timing of each frame.
-These standard specifications are essential for ensuring compatibility with VGA monitors.
-![VGA Standard](https://i.ibb.co/GCxpX3b/Screenshot-2023-09-12-032527.png)
-## Design
-The Verilog design for the VGA Controller is modular, following the VGA standard's timing and specifications.
+## 4. Problem Statement
+The traditional approach to VGA controller design using solid ICs is outdated and lacks flexibility. We aim to replace this with an FPGA-based solution to leverage the benefits of programmability and high integration.
 
-### Horizontal Counter
-Inputs:
-clk: Clock input
-reset_n: Active low reset
-Outputs:
-pixel_x: Horizontal pixel coordinate
-done_x: Signal indicating the end of a horizontal line
-The horizontal counter module generates the horizontal pixel coordinates for the VGA display. It increments the pixel_x counter and generates a "done_x" signal when reaching the end of a horizontal line.
+## 5. Proposed Solution
+Our solution involves designing a VGA controller using the Cyclone IV FPGA board. The controller will generate the necessary VGA signals (HSync, VSync, RGB data) and handle the timing logic required to display images stored in RAM on the VGA monitor.
 
-### Vertical Counter
-Inputs:
-clk: Clock input
-reset_n: Active low reset
-enable: Enables vertical counter (controlled by "done_x" signal from horizontal_counter)
-Outputs:
-pixel_y: Vertical pixel coordinate
-done_y: Signal indicating the end of a vertical frame
-The vertical counter module generates the vertical pixel coordinates for the VGA display. It increments the pixel_y counter and generates a "done_y" signal when reaching the end of a vertical frame. The "enable" input allows control over vertical synchronization.
+## 6. Technical Specifications
 
-### VGA Controller
-Inputs:
-clk: Clock input
-reset_n: Active low reset
-rgb_sw[2:0]: RGB color values (user-defined)
-Outputs:
-rgb[2:0]: RGB color values for the VGA display
-hsync: Horizontal synchronization signal
-vsync: Vertical synchronization signal
-The VGA controller module combines the horizontal and vertical counters to produce VGA timing signals (hsync and vsync). It also controls whether the video is displayed or not (video_on) and sets the RGB color values based on user-defined input.
+### i. VGA Standard
+The VGA standard specifies the signal timing and synchronization requirements for displaying images on VGA-compatible monitors. 
 
-![Architecture Of VGA](https://i.ibb.co/T1mb2bQ/Screenshot-2023-09-12-032548.png)
+### ii. VGA Controller Architecture Description
+The architecture consists of two main blocks: the VGA Sync block for generating synchronization signals and the Pixel Generation block for fetching and outputting pixel data.
 
-## Usage
-To use this VGA Controller design, you can include the Verilog modules in your FPGA project and instantiate them as needed. Ensure that you configure the design parameters (e.g., resolution, refresh rate) to match the VGA standard specifications for your target display.
+### iii. VGA Signal Timing
+The VGA signal timing involves precise generation of HSync and VSync pulses, along with pixel clock timing, to ensure proper image rendering.
 
-## Simulation
-This repository includes simulation files and testbenches to verify the functionality of the VGA Controller design. You can simulate the design using a Verilog simulation tool to ensure it adheres to the VGA standard specifications and meets your display requirements before implementation on an FPGA or other hardware.
+### iv. The Interfacing for VGA On The FPGA Board
+Our FPGA board, the Cyclone IV, includes a built-in VGA port with active signals for HSync, VSync, and RGB data.
 
-## License
-This VGA Controller design is provided under the MIT License. Feel free to modify and use it in your projects, ensuring it complies with the VGA standard
+## 7. Design Details
+
+### i. Inputs and Outputs
+Our VGA controller design takes inputs such as clock and reset signals and outputs HSync, VSync, and RGB data signals. Internal signals include pixel coordinates and the Video On signal.
+
+### ii. Logic Design
+The logic design includes:
+- **Horizontal Counter:** Counts from 0 to 639, generates done_x signal for line completion.
+- **Vertical Counter:** Similar to horizontal counter but with enable signal from done_x.
+- **HSync and VSync Generation:** Comparators and gates to generate synchronization signals.
+- **Control Logic for Video Output:** Determines when to output video data based on pixel coordinates.
+
+#### Horizontal Counter:
+- Built from a register, comparator, adder, and mux.
+
+#### Vertical Counter:
+- Similar to horizontal counter but with an enable signal from the done_x flag.
+
+#### HSync and VSync Generation:
+- Utilizes less-than comparators and logic gates to generate sync signals.
+
+#### Control Logic for Video Output:
+- Comprised of comparators and an AND gate to generate the Video On signal.
+
+### iii. Hardware Description Language (HDL) Implementation
+The design will be implemented in Verilog HDL, encompassing modules for each component such as horizontal counter, vertical counter, VGA controller, memory ROM, and top-level file.
+
+#### Horizontal Counter Module
+#### Vertical Counter Module
+#### VGA Controller Module
+#### Memory ROM Module
+#### Top-Level Module
+
+### iv. Testing and Simulation
+Our testing phase will involve simulating the Verilog design to ensure correctness of timing signals and proper image rendering on the VGA monitor.
+
+### v. Optimization and Performance Enhancement
+We encountered a memory limitation on our FPGA for 640x480x3-bit RGB data. To address this, we reduced the clock speed from 25MHz to 10MHz and adjusted the horizontal standards to fit the memory constraints.
+
+## 8. Results and Findings
+Our VGA controller successfully generated the required synchronization signals and displayed images stored in RAM on the VGA monitor. Detailed simulation results and performance metrics will be provided.
+
+## 9. FPGA Design Demo
+A live demo was conducted on the Cyclone IV FPGA board, showcasing the VGA controller's ability to render images accurately on a VGA monitor. [Include images or screenshots of the demo]
+
+## 10. References
+- [Include references to datasheets, academic papers, and other resources used in your project]
+
