@@ -15,9 +15,9 @@ Our primary objective is to replace a traditional solid IC implementation with a
 **Project Title:** FPGA-Powered Video Graphics Array
 
 ### Roles of Each Member:
-- **Design and Architecture:** [Member 1 Name]
-- **Logic Analysis:** [Member 2 Name], [Member 3 Name]
-- **Testing:** [Member 4 Name]
+- **Design and Architecture:** Omar Ashraf Abd El Mongy 
+- **Logic Analysis:** Kareem Ahmed Fathy, Abd-Allah Reda Farag  
+- **Testing:** Khaled Mohamed Fathy 
 
 ## 3. Aim and Objectives
 The aim of this project is to design a VGA controller using an FPGA and Verilog HDL to display images on a VGA monitor. Our objectives include understanding VGA signal standards, designing timing generation logic, implementing the design in Verilog, and testing the system.
